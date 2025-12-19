@@ -1,30 +1,457 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .favicon-center-dot {
-      fill: #014847;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    .favicon-lines {
-      fill: #05BDBA;
-    }
+<title>Good News – Christian Clothing</title>
 
-    @media (prefers-color-scheme: dark) {
-      .favicon-center-dot {
-        fill: #fff;
-      }
+<!-- ✅ OFFICIAL DOMAIN -->
+<link rel="canonical" href="https://www.goodnewsbrand.store/" />
+<meta property="og:title" content="Good News – Christian Clothing" />
+<meta property="og:description" content="Limited First Drops & Pre-Orders for NEW 'Holy Ghost' Tee are now open." />
+<meta property="og:url" content="https://www.goodnewsbrand.store/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.goodnewsbrand.store/goodnews%20logo%20text.png" />
+<meta name="twitter:card" content="summary_large_image" />
 
-      .favicon-lines {
-        fill: #05BDBA;
-      }
-    }
-  </style>
-  <path class="favicon-center-dot" stroke="none" d="M17.9922 18.3225H14.005L13.6746 17.9921V14.005L14.005 13.6746H17.9922L18.3226 14.005V17.9921L17.9922 18.3225Z" />
-  <g class="favicon-lines" stroke="none">
-    <path d="M9.6958 24.3311H9.35705L7.6661 22.6401V22.3041L10.2511 19.7164L12.042 19.7191L12.2808 19.9552V21.7461L9.6958 24.3311Z" />
-    <path d="M7.6661 9.69576V9.35701L9.35705 7.66606H9.6958L12.2808 10.2511V12.0392L12.042 12.2808H10.2511L7.6661 9.69576Z" />
-    <path d="M10.0457 17.4369H0.205466L0 17.2314V14.7658L0.205466 14.5603H10.0457L10.2511 14.7658V17.2314L10.0457 17.4369Z" />
-    <path d="M31.7945 17.4369H21.9544L21.7489 17.2314V14.7658L21.9544 14.5603H31.7945L32 14.7658V17.2314L31.7945 17.4369Z" />
-    <path d="M14.5631 10.0456V2.66547L14.7686 2.46001H17.2343L17.4396 2.66547V10.0456L17.2343 10.2511H14.7686L14.5631 10.0456Z" />
-    <path d="M14.5631 29.3316V21.9515L14.7686 21.746H17.2343L17.4396 21.9515V29.3316L17.2343 29.5371H14.7686L14.5631 29.3316Z" />
-  </g>
-</svg>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+/* RESET */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* COLOR TOKENS */
+:root{
+  --coralPink: rgb(190, 82, 90);
+}
+
+/* STICKY LOGO */
+.sticky-logo {
+  position: fixed;
+  top: calc(14px + env(safe-area-inset-top));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.sticky-logo img {
+  height: 80px;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.9))
+          drop-shadow(0 0 14px rgba(255,255,255,0.6))
+          drop-shadow(0 0 28px rgba(255,255,255,0.4));
+  animation: logoFlicker 6s infinite;
+}
+@keyframes logoFlicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.85; }
+}
+
+/* HERO (iPhone-safe) */
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: url("webpage back.jpg") center/cover no-repeat;
+  position: relative;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(40px + env(safe-area-inset-top));
+  padding-bottom: calc(20px + env(safe-area-inset-bottom));
+}
+
+/* NEON PNG */
+.neon-sign {
+  width: min(720px, 92vw);
+  margin-top: clamp(70px, 10vh, 120px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter:
+    drop-shadow(0 0 4px rgba(255,255,255,0.95))
+    drop-shadow(0 0 10px rgba(255,255,255,0.75))
+    drop-shadow(0 0 18px rgba(190, 82, 90, 0.95))
+    drop-shadow(0 0 34px rgba(190, 82, 90, 0.80))
+    drop-shadow(0 0 60px rgba(190, 82, 90, 0.65));
+  animation: neonPulse 4.5s ease-in-out infinite;
+}
+@keyframes neonPulse {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 4px rgba(255,255,255,0.95))
+      drop-shadow(0 0 10px rgba(255,255,255,0.75))
+      drop-shadow(0 0 18px rgba(190, 82, 90, 0.95))
+      drop-shadow(0 0 34px rgba(190, 82, 90, 0.80))
+      drop-shadow(0 0 60px rgba(190, 82, 90, 0.65));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 6px rgba(255,255,255,1))
+      drop-shadow(0 0 14px rgba(255,255,255,0.9))
+      drop-shadow(0 0 24px rgba(190, 82, 90, 1))
+      drop-shadow(0 0 44px rgba(190, 82, 90, 0.9))
+      drop-shadow(0 0 78px rgba(190, 82, 90, 0.78));
+  }
+}
+
+/* Handwritten tagline */
+.hero-subtext {
+  font-family: "Patrick Hand", Arial, sans-serif;
+  color: #fff;
+  font-size: 1.35rem;
+  margin: 6px 0;
+}
+
+/* Buttons */
+.btn,
+.preorder-btn {
+  background: var(--coralPink);
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SLIDESHOW */
+.slideshow {
+  width: 500px;
+  height: 580px;
+  margin: 40px auto;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+
+/* SIZE GUIDE SECTION */
+.size-guide {
+  background: #f7f7f7;
+  padding: 60px 20px;
+}
+.measurement-chart {
+  width: min(900px, 95%);
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 10px 26px rgba(0,0,0,0.25));
+}
+
+/* CONTACT (iPhone-safe bottom) */
+.contact {
+  background: #0b0b0b;
+  padding: 60px 20px;
+  padding-bottom: calc(60px + env(safe-area-inset-bottom));
+}
+.contact h2 { color: #fff; }
+.contact a {
+  color: var(--coralPink);
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+/* ===== PREORDER NOTICE MODAL ===== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 18px;
+}
+.modal-backdrop.show { display: flex; }
+
+.modal {
+  width: min(720px, 96vw);
+  max-height: calc(100svh - 36px);
+  overflow: auto;
+  background: #0b0b0b;
+  color: #fff;
+  border-radius: 18px;
+  padding: 26px 20px;
+  text-align: left;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.modal h3 { margin: 0 0 10px; font-size: 1.6rem; }
+.modal p { margin: 10px 0; line-height: 1.55; opacity: 0.92; }
+
+.notice-bullets { margin: 14px 0 8px; padding-left: 18px; }
+.notice-bullets li { margin: 8px 0; }
+
+.field {
+  margin-top: 14px;
+}
+.field label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+.field input {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  outline: none;
+}
+.field input::placeholder { color: rgba(255,255,255,0.55); }
+
+.checkbox-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 14px;
+}
+.checkbox-row input { margin-top: 4px; }
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.22);
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-error {
+  display: none;
+  margin-top: 14px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: rgba(190, 82, 90, 0.18);
+  border: 1px solid rgba(190, 82, 90, 0.55);
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .slideshow { width: 240px; height: 300px; }
+  .sticky-logo img { height: 58px; }
+  .container { padding: 34px 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- STICKY LOGO -->
+<div class="sticky-logo">
+  <img src="good news logo front web.png" alt="Good News Logo">
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="container">
+
+      <img src="goodnews logo text.png" class="neon-sign" alt="GOOD NEWS">
+
+      <p class="hero-subtext">Spread the Good News.</p>
+      <p class="hero-subtext">Limited First Drops &amp; Pre-Orders for NEW 'Holy Ghost' Tee are now open</p>
+
+      <a href="#preorder" class="btn">Pre-Order Now</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section id="preorder">
+  <div class="container">
+    <h2>Holy Ghost Long Sleeve Tee</h2>
+
+    <div class="slideshow">
+      <img src="gn product photo 1.jpg" class="slide active" alt="Product photo 1">
+      <img src="gn product photo 2.jpg" class="slide" alt="Product photo 2">
+      <img src="gn product photo 3.jpg" class="slide" alt="Product photo 3">
+    </div>
+
+    <p><strong>$40</strong> — Heavyweight 100% Cotton Long Sleeve Tee, Snow washed 'Stone Gray' colorway</p>
+
+    <!-- ✅ Preorder button opens notice modal FIRST -->
+    <button type="button" class="preorder-btn" id="openPreorderNotice">Pre-Order Here</button>
+
+  </div>
+</section>
+
+<!-- SIZE GUIDE -->
+<section class="size-guide">
+  <div class="container">
+    <img src="measurement chart.jpg" class="measurement-chart" alt="Size Chart">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <a href="tel:17072106909">707-210-6909</a>
+    <a href="mailto:goodnewsofficialclothing@gmail.com">goodnewsofficialclothing@gmail.com</a>
+    <a href="https://www.instagram.com/goodnews.gn/" target="_blank" rel="noopener">@goodnews.gn</a>
+  </div>
+</section>
+
+<!-- ===== PREORDER NOTICE MODAL ===== -->
+<div class="modal-backdrop" id="preorderModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="preorderTitle">
+    <h3 id="preorderTitle">Pre-Order Notice</h3>
+
+    <p>
+      This is a <strong>pre-order</strong>. There is <strong>no official release date yet</strong>.
+      Once production is finished, pre-order customers get the privilege of receiving the product first.
+    </p>
+
+    <ul class="notice-bullets">
+      <li>Please enter your <strong>email</strong> so you can get updates.</li>
+      <li>Tap <strong>I Agree — Continue</strong> to proceed to secure checkout.</li>
+    </ul>
+
+    <div class="field">
+      <label for="buyerEmail">Email</label>
+      <input id="buyerEmail" type="email" placeholder="you@email.com" required />
+    </div>
+
+    <div class="checkbox-row">
+      <input id="agreeBox" type="checkbox" />
+      <label for="agreeBox">
+        I understand this is a preorder and that the release date is not official yet. I want to proceed to checkout.
+      </label>
+    </div>
+
+    <div id="formError" class="form-error"></div>
+
+    <div class="modal-actions">
+      <button type="button" class="btn-secondary" id="closePreorderNotice">Cancel</button>
+      <button type="button" class="preorder-btn" id="agreeContinueBtn">I Agree — Continue</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- SLIDESHOW SCRIPT -->
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 2500);
+</script>
+
+<!-- MODAL + EMAIL + AGREE + REDIRECT -->
+<script>
+const STRIPE_LINK = "https://buy.stripe.com/3cIbJ143q2PI9KGgVe7N600";
+
+const modal = document.getElementById("preorderModal");
+const openBtn = document.getElementById("openPreorderNotice");
+const closeBtn = document.getElementById("closePreorderNotice");
+const continueBtn = document.getElementById("agreeContinueBtn");
+
+const emailInput = document.getElementById("buyerEmail");
+const agreeBox = document.getElementById("agreeBox");
+const errBox = document.getElementById("formError");
+
+function openModal() {
+  modal.classList.add("show");
+  modal.setAttribute("aria-hidden", "false");
+  errBox.style.display = "none";
+  errBox.textContent = "";
+  setTimeout(() => emailInput.focus(), 50);
+}
+function closeModal() {
+  modal.classList.remove("show");
+  modal.setAttribute("aria-hidden", "true");
+}
+
+openBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+
+// close if clicking backdrop
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) closeModal();
+});
+
+// ESC closes
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("show")) closeModal();
+});
+
+continueBtn.addEventListener("click", () => {
+  errBox.style.display = "none";
+  errBox.textContent = "";
+
+  const emailVal = (emailInput.value || "").trim();
+  const agreed = agreeBox.checked;
+
+  if (!emailVal) {
+    errBox.textContent = "Please enter your email.";
+    errBox.style.display = "block";
+    emailInput.focus();
+    return;
+  }
+  // basic email check
+  if (!emailVal.includes("@") || !emailVal.includes(".")) {
+    errBox.textContent = "Please enter a valid email address.";
+    errBox.style.display = "block";
+    emailInput.focus();
+    return;
+  }
+  if (!agreed) {
+    errBox.textContent = "Please check the box to agree before continuing.";
+    errBox.style.display = "block";
+    return;
+  }
+
+  // Store locally (no backend) — optional
+  try { localStorage.setItem("goodnews_preorder_email", emailVal); } catch(e) {}
+
+  // Redirect to Stripe checkout
+  window.location.href = STRIPE_LINK;
+});
+</script>
+
+</body>
+</html>
